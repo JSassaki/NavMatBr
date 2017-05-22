@@ -16,7 +16,9 @@ CLOSURE_COMPILER=java -jar $(CLOSURE_ROOT)/compiler.jar --manage_closure_depende
 
 # The closure DepsWriter, available at
 #     http://code.google.com/closure/library/docs/depswriter.html
-DEPSWRITER=python $(CLOSURE_ROOT)/depswriter.py
+
+DEPSWRITER=python /home/alcance/closure-library/closure/bin/build/depswriter.py
+#DEPSWRITER=python $(CLOSURE_ROOT)/depswriter.py
 
 #######################################
 
