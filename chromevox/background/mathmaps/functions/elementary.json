@@ -1,211 +1,271 @@
 [
-  {"category": "Elementary",
-   "mappings": {
-     "default": {
-       "default": "logarithm",
-       "alternative": "logarithm function",
-       "short": "log"
-     }
-   },
-   "key": "log",
-   "names": ["log"]
+  {
+    "category": "Elementary",
+    "mappings": {
+      "default": {
+        "default": "logaritmo",
+        "alternative": "função logaritmo",
+        "short": "registo"
+      }
+    },
+    "key": "log",
+    "names": [
+      "log"
+    ]
   },
-  {"category": "Elementary",
-   "mappings": {
-     "default": {
-       "default": "natural logarithm",
-       "alternative": "natural logarithm function",
-       "short": "natural log"
-     }
-   },
-   "key": "ln",
-   "names": ["ln"]
+  {
+    "category": "Elementary",
+    "mappings": {
+      "default": {
+        "default": "logaritmo natural",
+        "alternative": "logaritmo natural da função",
+        "short": "natural de registo"
+      }
+    },
+    "key": "ln",
+    "names": [
+      "ln"
+    ]
   },
-  {"category": "Elementary",
-   "mappings": {
-     "default": {
-       "default": "logarithm base 10",
-       "short": "log base 10"} },
-   "key": "lg",
-   "names": ["lg"]},
-  {"category": "Elementary",
-   "mappings": {
-     "default": {
-       "default": "exponential",
-       "alternative": "exponential function",
-       "short": "exp"
-     }
-   },
-   "key": "exp",
-   "names": ["exp", "expt"]
+  {
+    "category": "Elementary",
+    "mappings": {
+      "default": {
+        "default": "logaritmo de base 10",
+        "short": "log de base 10"
+      }
+    },
+    "key": "lg",
+    "names": [
+      "lg"
+    ]
   },
-
-  {"category": "Elementary",
-   "mappings": {
-     "default": {
-       "default": "greatest common divisor",
-       "short": "gcd"
-     }
-   },
-   "key": "gcd",
-   "names": ["gcd"]
+  {
+    "category": "Elementary",
+    "mappings": {
+      "default": {
+        "default": "exponencial",
+        "alternative": "função exponencial",
+        "short": "exp"
+      }
+    },
+    "key": "exp",
+    "names": [
+      "exp",
+      "expt"
+    ]
   },
-  {"category": "Elementary",
-   "mappings": {
-     "default": {
-       "default": "least common multiple",
-       "short": "lcm"
-     }
-   },
-   "key": "lcm",
-   "names": ["lcm"]
+  {
+    "category": "Elementary",
+    "mappings": {
+      "default": {
+        "default": "máximo divisor comum",
+        "short": "gcd"
+      }
+    },
+    "key": "gcd",
+    "names": [
+      "gcd"
+    ]
   },
-
-  {"category": "Complex",
-   "mappings": {
-     "default": {
-       "default": "argument",
-       "short": "arg"
-     }
-   },
-   "key": "arg",
-   "names": ["arg"]
+  {
+    "category": "Elementary",
+    "mappings": {
+      "default": {
+        "default": "mínimo múltiplo comum",
+        "short": "lcm"
+      }
+    },
+    "key": "lcm",
+    "names": [
+      "lcm"
+    ]
   },
-  {"category": "Complex",
-   "mappings": {
-     "default": {
-       "default": "imaginary part",
-       "short": "imaginary"
-     }
-   },
-   "key": "im",
-   "names": ["im"]
+  {
+    "category": "Complex",
+    "mappings": {
+      "default": {
+        "default": "argumento",
+        "short": "arg"
+      }
+    },
+    "key": "arg",
+    "names": [
+      "arg"
+    ]
   },
-  {"category": "Complex",
-   "mappings": {
-     "default": {
-       "default": "real part",
-       "short": "real"
-     }
-   },
-   "key": "re",
-   "names": ["re"]
+  {
+    "category": "Complex",
+    "mappings": {
+      "default": {
+        "default": "parte imaginária",
+        "short": "imaginário de janeiro"
+      }
+    },
+    "key": "im",
+    "names": [
+      "im"
+    ]
   },
-
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "infimum",
-       "short": "inf"
-     }
-   },
-   "key": "inf",
-   "names": ["inf"]
+  {
+    "category": "Complex",
+    "mappings": {
+      "default": {
+        "default": "parte real",
+        "short": "real"
+      }
+    },
+    "key": "re",
+    "names": [
+      "re"
+    ]
   },
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "limit",
-       "short": "lim"
-     }
-   },
-   "key": "lim",
-   "names": ["lim"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "infimum",
+        "short": "inf"
+      }
+    },
+    "key": "inf",
+    "names": [
+      "inf"
+    ]
   },
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "infimum default",
-       "alternative": "inferior limit",
-       "short": "liminf"
-     }
-   },
-   "key": "liminf",
-   "names": ["lim inf"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "limite de",
+        "short": "lim"
+      }
+    },
+    "key": "lim",
+    "names": [
+      "lim"
+    ]
   },
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "supremum limit",
-       "alternative": "superior limit",
-       "short": "limsup"
-     }
-   },
-   "key": "limsup",
-   "names": ["lim sup"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "infimum padrão",
+        "alternative": "inferior limite",
+        "short": "liminf"
+      }
+    },
+    "key": "liminf",
+    "names": [
+      "lim inf"
+    ]
   },
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "maximum",
-       "short": "max"
-     }
-   },
-   "key": "max",
-   "names": ["max"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "supremum limite",
+        "alternative": "limite superior",
+        "short": "limsup"
+      }
+    },
+    "key": "limsup",
+    "names": [
+      "lim sup"
+    ]
   },
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "minimum",
-       "short": "min"
-     }
-   },
-   "key": "min",
-   "names": ["min"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "máximo",
+        "short": "max."
+      }
+    },
+    "key": "max",
+    "names": [
+      "max"
+    ]
   },
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "supremum",
-       "short": "sup"
-     }
-   },
-   "key": "sup",
-   "names": ["sup"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "mínimo",
+        "short": "min"
+      }
+    },
+    "key": "min",
+    "names": [
+      "min"
+    ]
   },
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "injective limit",
-       "alternative": "direct limit",
-       "short": "colimit"
-     }
-   },
-   "key": "injlim",
-   "names": ["injlim", "inj lim"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "supremum",
+        "short": "sup"
+      }
+    },
+    "key": "sup",
+    "names": [
+      "sup"
+    ]
   },
-  {"category": "Limits",
-   "mappings": {
-     "default": {
-       "default": "projective limit",
-       "alternative": "inverse limit",
-       "short": "limit"
-     }
-   },
-   "key": "projlim",
-   "names": ["projlim", "proj lim"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "injective limite",
+        "alternative": "direto limite",
+        "short": "colimit"
+      }
+    },
+    "key": "injlim",
+    "names": [
+      "injlim",
+      "inj lim"
+    ]
   },
-
-
-  {"category": "Elementary",
-   "mappings": {
-     "default": {
-       "default": "modulo",
-       "short": "mod"
-     }
-   },
-   "key": "mod",
-   "names": ["mod"]
+  {
+    "category": "Limits",
+    "mappings": {
+      "default": {
+        "default": "projetiva limite",
+        "alternative": "inverso limite",
+        "short": "limite de"
+      }
+    },
+    "key": "projlim",
+    "names": [
+      "projlim",
+      "proj lim"
+    ]
   },
-
-  {"category": "Probability",
-   "mappings": {
-     "default": {
-       "default": "probability"
-     }
-   },
-   "key": "Pr",
-   "names": ["Pr"]
+  {
+    "category": "Elementary",
+    "mappings": {
+      "default": {
+        "default": "módulo",
+        "short": "mod"
+      }
+    },
+    "key": "mod",
+    "names": [
+      "mod"
+    ]
+  },
+  {
+    "category": "Probability",
+    "mappings": {
+      "default": {
+        "default": "probabilidade"
+      }
+    },
+    "key": "Pr",
+    "names": [
+      "Pr"
+    ]
   }
 ]
