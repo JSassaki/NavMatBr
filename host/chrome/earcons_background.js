@@ -65,7 +65,7 @@ cvox.EarconsBackground.prototype.playEarcon = function(earcon) {
     return;
   }
   if (window['console']) {
-    window['console']['log']('Earcon ' + this.getEarconName(earcon));
+    //window['console']['log']('Earcon ' + this.getEarconName(earcon));
   }
 
   this.currentAudio = this.audioMap[earcon];

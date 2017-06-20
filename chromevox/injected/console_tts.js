@@ -13,7 +13,7 @@
 // limitations under the License.
 
 /**
- * @fileoverview A TTS engine that writes to window.console.
+ * @fileoverview A TTS engine that writes to //window.console.
  * @author deboer@google.com (James deBoer)
  */
 
@@ -47,14 +47,14 @@ cvox.ConsoleTts.prototype.speak = function(textString, queueMode, properties) {
       logStr += ' (Q)';
     }
     logStr += ' "' + textString + '"';
-    window['console']['log'](logStr);
+    //window['console']['log'](logStr);
 
     if (properties && properties['startCallback'] != undefined) {
-      window.console.log('  using startCallback');
+      //window.console.log('  using startCallback');
     }
 
     if (properties && properties['endCallback'] != undefined) {
-      window.console.log('  using endCallback');
+      //window.console.log('  using endCallback');
     }
   }
   return this;
@@ -66,7 +66,7 @@ cvox.ConsoleTts.prototype.isSpeaking = function() { return false; };
 /** @override */
 cvox.ConsoleTts.prototype.stop = function() {
   if (this.enabled_) {
-    window['console']['log']('Stop');
+    //window['console']['log']('Stop');
   }
 };
 

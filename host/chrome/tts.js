@@ -54,7 +54,7 @@ cvox.ChromeTts.prototype.speak = function(textString, queueMode, properties) {
   }
 
   goog.base(this, 'speak', textString, queueMode, properties);
-
+  //window.console.log(textString);
   cvox.ExtensionBridge.send(
       this.createMessageForProperties_(textString, queueMode, properties));
 };
@@ -108,6 +108,7 @@ cvox.ChromeTts.prototype.addBridgeListener = function() {
           var id = msg['id'];
           var func = cvox.ChromeTts.functionMap[id];
           if (func != undefined) {
+            //window.console.log(func);
             func();
             delete cvox.ChromeTts.functionMap[id];
           }
@@ -142,6 +143,7 @@ cvox.ChromeTts.prototype.createMessageForProperties_ =
         properties['endCallback'];
     message['endCallbackId'] = cvox.ChromeTts.callId++;
   }
+  //window.console.log(message);
   return message;
     };
 

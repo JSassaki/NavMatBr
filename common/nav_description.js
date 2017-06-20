@@ -104,6 +104,7 @@ cvox.NavDescription.prototype.speak = function(
    * Return a deep copy of PERSONALITY_ANNOTATION for modifying.
    * @return {Object} The newly created properties object.
    */
+
   function makeAnnotationProps() {
     var properties = {};
     var src = cvox.AbstractTts.PERSONALITY_ANNOTATION;
@@ -140,6 +141,7 @@ cvox.NavDescription.prototype.speak = function(
     if (i == length - 1 && endCallback) {
       speakArgs[i][2]['endCallback'] = endCallback;
     }
+    //console.log(speakArgs[i][2]['startCallback']);
     cvox.ChromeVox.tts.speak.apply(cvox.ChromeVox.tts, speakArgs[i]);
   }
 };

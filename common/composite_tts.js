@@ -53,7 +53,9 @@ cvox.CompositeTts.prototype.add = function(tts) {
  */
 cvox.CompositeTts.prototype.speak =
     function(textString, queueMode, properties) {
+      //console.log(textString);
   this.ttsEngines_.forEach(function(engine) {
+    //console.log(engine.speak(textString, queueMode, properties));
     engine.speak(textString, queueMode, properties);
   });
 };

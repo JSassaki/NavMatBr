@@ -292,7 +292,11 @@ cvox.TtsBackground.prototype.speak = function(
       console.log('Dropped utterance: ' + textString);
     } else {
       // Check to see that either no one is speaking or only we are.
+      console.log(textString);
       chrome.tts.speak(textString, mergedProperties, this.onError_);
+      //window.alert(textString);
+      //this.writeSpeak_(textString);
+      //this.writeSpeakHTML_();
       this.utteranceCount_++;
     }
   }, this));
@@ -501,4 +505,56 @@ cvox.TtsBackground.prototype.clearTimeout_ = function() {
     clearTimeout(this.timeoutId_);
     this.timeoutId_ = undefined;
   }
+};
+
+cvox.TtsBackground.prototype.writeSpeak_ = function(formatedText) {
+
+  window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+
+  function onInitFs(fs) {
+
+  fs.root.getFile('log.txt', {create: true}, function(fileEntry) {
+
+    // Create a FileWriter object for our FileEntry (log.txt).
+    fileEntry.createWriter(function(fileWriter) {
+
+      console.log('Path :' , fileEntry.filesystem);
+
+      fileWriter.onwriteend = function(e) {
+        console.log('Write completed.');
+      };
+
+      fileWriter.onerror = function(e) {
+        console.log('Write failed: ' + e.toString());
+      };
+
+      window.BlobBuilder = window.BlobBuilder || window.WebKitBlobBuilder ||
+                     window.MozBlobBuilder || window.MSBlobBuilder;
+
+      var bb = new BlobBuilder();
+
+      bb.append(formatedText);
+      fileWriter.seek(fileWriter.length);  // Start write position at EOF.
+      fileWriter.write(bb.getBlob('text/plain'));
+
+    }, errorHandler);
+
+      console.log('Opened file system: ' + fs.name);
+
+    }, errorHandler);
+
+  }
+  
+  function errorHandler(e) {
+    var msg = e;
+    console.log('Error: ' + msg);
+  }
+
+  window.requestFileSystem(window.TEMPORARY, 5*1024*1024 /*5MB*/, onInitFs, errorHandler);
+
+};
+
+cvox.TtsBackground.prototype.writeSpeakHTML_ = function() {
+  var newURL = "///home/alcance/index.html";
+  //window.open(newURL);
 };

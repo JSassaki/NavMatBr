@@ -65,6 +65,7 @@ cvox.NavigationSpeaker.prototype.speakDescriptionArray = function(
   var self = this;
   var speakDescriptionChain = function(i, queueMode, id) {
     var description = descriptionArray[i];
+    //window.console.log(description.speak);
     if (!description || self.stopReading || self.id_ != id) {
       return;
     }

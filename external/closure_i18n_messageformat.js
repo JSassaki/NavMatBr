@@ -573,6 +573,7 @@ goog.i18n.MessageFormat.prototype.parseBlockType_ = function(pattern) {
  * @private
  */
 goog.i18n.MessageFormat.prototype.parseBlock_ = function(pattern) {
+  console.log(entrou);
   var result = [];
   var parts = this.extractParts_(pattern);
   for (var i = 0; i < parts.length; i++) {
@@ -609,6 +610,7 @@ goog.i18n.MessageFormat.prototype.parseBlock_ = function(pattern) {
     result.push(block);
   }
 
+  console.log(result);
   return result;
 };
 

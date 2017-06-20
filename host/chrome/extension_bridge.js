@@ -103,6 +103,7 @@ cvox.ExtensionBridge.PONG_MSG = 'cvox.ExtensionBridge.Pong';
  * @param {Object} message The message to be sent.
  */
 cvox.ExtensionBridge.send = function(message) {
+  //window.console.log(message);
   var self = cvox.ExtensionBridge;
   switch (self.context) {
   case self.BACKGROUND:
@@ -162,10 +163,12 @@ cvox.ExtensionBridge.initBackground = function() {
             var pongMessage = {};
             pongMessage[cvox.ExtensionBridge.PONG_MSG] = 1;
             port.postMessage(pongMessage);
+              //window.console.log(pongMessage);
 	    return;
 	  }
           for (var i = 0; i < self.messageListeners.length; i++) {
             self.messageListeners[i](message, port);
+            //window.console.log(message);
           }
         });
   };
@@ -219,10 +222,12 @@ cvox.ExtensionBridge.setupBackgroundPort = function() {
   self.backgroundPort = chrome.extension.connect({name: self.PORT_NAME});
   self.backgroundPort.onMessage.addListener(
       function(message) {
+        //window.console.log(message['message']);
         if (message[cvox.ExtensionBridge.PONG_MSG]) {
           self.gotPongFromBackgroundPage();
         } else {
           for (var i = 0; i < self.messageListeners.length; i++) {
+            //window.console.log(self.messageListeners[i]);
             self.messageListeners[i](message, self.backgroundPort);
           }
         }

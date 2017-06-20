@@ -62,6 +62,7 @@ goog.require('goog.i18n.MessageFormat');
  * @param {boolean} triggeredByUser .
  */
 cvox.TextChangeEvent = function(newValue, newStart, newEnd, triggeredByUser) {
+  console.log(newValue);
   this.value = newValue;
   this.start = newStart;
   this.end = newEnd;

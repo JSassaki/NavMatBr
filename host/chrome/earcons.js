@@ -41,6 +41,7 @@ goog.inherits(cvox.ChromeEarcons, cvox.AbstractEarcons);
  * @override
  */
 cvox.ChromeEarcons.prototype.playEarcon = function(earcon) {
+  //window.console.log(earcon);
   goog.base(this, 'playEarcon', earcon);
   if (!this.enabled) {
     return;
