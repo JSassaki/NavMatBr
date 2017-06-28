@@ -455,7 +455,7 @@ goog.scope(function() {
 
   defineRule(
     'cube', 'default.default',
-    '[n] ./*[1]; [t] "ao cubo" (pitch:0.35); [p] (pause:300)',
+    '[n] ./*[1]; [t] "cubo" (pitch:0.35); [p] (pause:300)',
     'self::mathml:msup', './*[2][text()=3]');
   defineRuleAlias(
     'cube', 'self::mathml:msup',

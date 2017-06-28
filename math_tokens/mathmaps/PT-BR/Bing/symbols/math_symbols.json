@@ -83,7 +83,7 @@
         "mappings": {
             "default": {
                 "default": "sinal de adição",
-                "short": "plus"
+                "short": "mais"
             }
         },
         "key": "002B"
